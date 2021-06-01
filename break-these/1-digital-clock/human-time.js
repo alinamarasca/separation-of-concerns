@@ -19,8 +19,14 @@ weekday[6] = "Saturday";
 
 let today = weekday[date.getDay()];
 
-  if (today == "Wednesday"){
-      today = `It's ${today} my dudes!`
+  if (today == "Tuesday"){
+    // let img = document.createElement('img');
+    let img = document.createElement('IMG');
+    console.log(img);
+    // img.src = 'https://media.geeksforgeeks.org/wp-content/uploads/20190529122828/bs21.png';
+    document.write('https://media.geeksforgeeks.org/wp-content/uploads/20190529122828/bs21.png')
+    // document.getElementByTag('body').appendChild(img)
+    today = `It's ${today} my dudes!` + img;
     
     
    ;
