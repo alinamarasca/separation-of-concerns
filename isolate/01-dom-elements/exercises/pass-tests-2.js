@@ -1,5 +1,7 @@
 'use strict';
-
+const element = document.createElement('P');
+element.innerHTML = 'lorem ipsum dolor';
+element.className = 'fancy-text';
 
 
 

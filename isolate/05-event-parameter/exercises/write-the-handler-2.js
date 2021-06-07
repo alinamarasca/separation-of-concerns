@@ -1,14 +1,17 @@
 'use strict';
 
-
+// <h1> hahahaha </h1>
+// headerEl.innerHTML = 'ahahah'
 const headerEl = document.createElement('h1');
 console.log('initial header:', headerEl.cloneNode(true));
 
+// prompt
+// innerHTML h1 -> prompt
 
 const changeHeaderTextHandler = (event) => {
   // take input from a user and set it as the target's innerHTML
-
-
+// const userInput = prompt('place new text');
+headerEl.innerHTML = prompt('place new text');
 };
 
 headerEl.addEventListener('click', changeHeaderTextHandler);

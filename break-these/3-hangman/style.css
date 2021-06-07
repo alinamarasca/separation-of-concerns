@@ -2,14 +2,22 @@
 
 /* Variabes */
 /* Mixin's */
+:root {
+  --neutral: #2F4858;
+  --yay: #4A3865;
+  --nay: #780C36;
+  --bloody: #780A0A;
+
+}
+
 body {
-  background: #c1d72e;
+  background: var(--neutral);
   font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
     Helvetica, Arial, 'Lucida Grande', sans-serif;
   color: #fff;
   height: 100%;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 .wrappper {
   width: 100%;
@@ -40,7 +48,7 @@ h2 {
   font-size: 1.6em;
 }
 p {
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 #alphabet {
   margin: 15px auto;
@@ -60,7 +68,7 @@ p {
   height: 30px;
   padding-top: 10px;
   background: #fff;
-  color: #c1d72e;
+  color: #5b2ed7;
   cursor: pointer;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -69,7 +77,7 @@ p {
   border: solid 1px #fff;
 }
 #alphabet li:hover {
-  background: #c1d72e;
+  background: #2e77d7;
   border: solid 1px #fff;
   color: #fff;
 }
@@ -115,7 +123,7 @@ button {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   -khtml-border-radius: 5px;
-  background: #c1d72e;
+  /* background: #296080; */
   color: #fff;
   border: solid 1px #fff;
   text-decoration: none;
@@ -126,13 +134,19 @@ button {
   margin: 10px;
   outline: none;
 }
+#hint{
+  background-color: var(--yay);
+}
+#reset{
+  background-color: var(--nay);
+}
 button:hover {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background: #fff;
   border: solid 1px #fff;
-  color: #c1d72e;
+  color: #ffa600;
 }
 @media (max-width: 767px) {
   #alphabet {

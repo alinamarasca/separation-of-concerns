@@ -9,10 +9,17 @@ ulEl.innerHTML = `
 console.log(ulEl.nodeName, ulEl.cloneNode(true));
 
 // --- write some code ---
+const toady = ulEl.querySelector('li');
+console.log(toady);
+toady.innerHTML= 'toad';
 
+const froggy = ulEl.querySelectorAll('li')[1];
+console.log(froggy);
+froggy.innerHTML= 'frog';
 
-
-
+const salado = ulEl.querySelectorAll('li')[2];
+console.log(salado);
+salado.innerHTML= 'salamander';
 // --- --- --- --- --- ---
 
 console.log(ulEl.nodeName, ulEl.cloneNode(true));

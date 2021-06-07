@@ -19,11 +19,17 @@ console.log(divEl.nodeName, divEl.cloneNode(true));
 
 // --- write some code ---
 //  you will need to access and update each <td> element
-
-
-
-
+let newVals = ['a', 'b', 'c', 'd'];
+const valuesArray = Array.from(divEl.getElementsByTagName('td'))
+console.log(valuesArray);
+// good old loop
+for (let i = 0; i < valuesArray.length; i++){ //iterate through 'td'
+  for(let j = 0; j < newVals.length; j ++){//iterate through new values
+    valuesArray[i].innerHTML = newVals[i];// attach to 'td' a new value
+  }
+}
 // --- --- --- --- --- ---
+
 
 console.log(divEl.nodeName, divEl.cloneNode(true));
 

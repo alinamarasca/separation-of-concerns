@@ -196,16 +196,16 @@ window.onload = function() {
     list.onclick = function() {
       debugger; // each time a user selects a letter
 
-      var geuss = this.innerHTML;
+      var guess = this.innerHTML;
       this.setAttribute('class', 'active');
       this.onclick = null;
       for (var i = 0; i < word.length; i++) {
-        if (word[i] === geuss) {
-          geusses[i].innerHTML = geuss;
+        if (word[i] === guess) {
+          geusses[i].innerHTML = guess;
           counter += 1;
         }
       }
-      var j = word.indexOf(geuss);
+      var j = word.indexOf(guess);
       if (j === -1) {
         lives -= 1;
         comments();
@@ -300,3 +300,5 @@ window.onload = function() {
     play();
   };
 };
+// create a button to reset scheme
+// change stuff with js?

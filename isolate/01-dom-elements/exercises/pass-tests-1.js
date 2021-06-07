@@ -1,5 +1,7 @@
 'use strict';
-
+const element = document.createElement('input');
+element.placeholder = 'enter your username';
+element.className = 'auth-field';
 
 
 

@@ -3,13 +3,13 @@
 
 const buttonEl = document.createElement('button');
 buttonEl.innerHTML = '12345';
-console.log('initial button:', buttonEl.cloneNode(true));
+// console.log('initial button:', buttonEl.cloneNode(true));
 
-
+let newText = buttonEl.innerHTML;
 const reverseInnerHTMLHandler = (event) => {
   // write code to reverse the target element's innerHTML
-
-
+newText = newText.split("").reverse().join("");
+return buttonEl.innerHTML = newText;
 };
 
 buttonEl.addEventListener('click', reverseInnerHTMLHandler);
